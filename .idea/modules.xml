@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/tsys.iml" filepath="$PROJECT_DIR$/.idea/tsys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tsysapi/.idea/tsysapi.iml" filepath="$PROJECT_DIR$/../tsysapi/.idea/tsysapi.iml" />
     </modules>
   </component>
 </project>
