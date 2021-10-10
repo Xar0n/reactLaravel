@@ -62,12 +62,12 @@ function Register() {
                                     </div>
                                     <div className="form-group mb-3">
                                         <label htmlFor="">Email ID</label>
-                                        <input type="text" name="email" onChange={handleInput} value={registerInput.email} className="form-control"/>
+                                        <input type="email" name="email" onChange={handleInput} value={registerInput.email} className="form-control"/>
                                         <span>{registerInput.error_list.email}</span>
                                     </div>
                                     <div className="form-group mb-3">
                                         <label htmlFor="">Password</label>
-                                        <input type="text" name="password" onChange={handleInput} value={registerInput.password} className="form-control"/>
+                                        <input type="password" name="password" onChange={handleInput} value={registerInput.password} className="form-control"/>
                                         <span>{registerInput.error_list.password}</span>
                                     </div>
                                     <div className="form-group mb-3">
