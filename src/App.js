@@ -4,6 +4,7 @@ import MasterLayout from "./layouts/admin/MasterLayout";
 import Home from "./components/frontend/Home";
 import Register from "./components/frontend/auth/Register";
 import Login from "./components/frontend/auth/Login";
+import AdminPrivateRoute from "./AdminPrivateRoute";
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
@@ -29,7 +30,8 @@ function App() {
                 <Route path="/register">
                     {localStorage.getItem('auth_token') ? <Redirect to='/' />:<Register />}
                 </Route>
-                <Route path="/admin/" name="Admin" render={(props) => <MasterLayout {...props}/>}/>
+                {/*<Route path="/admin/" name="Admin" render={(props) => <MasterLayout {...props}/>}/>*/}
+                <AdminPrivateRoute path="/admin/" name="Admin"/>
             </Switch>
         </Router>
     </div>
